@@ -1,0 +1,155 @@
+@charset "UTF-8";
+body {
+  background-image: url(bg-default.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: auto;
+}
+.container .welcome {
+  width: 100%;
+  height: 250px;
+  background-image: url(fundo.jpg);
+  background-repeat: no-repeat;
+}
+.container .welcome .nome-site {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100px;
+  top: 75px;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: white;
+  /*método moderno de alinhar um item no centro de outra div*/
+  /*align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  */
+}
+.container .welcome .nome-site .titulo {
+  height: 60px;
+  font-size: 45px;
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+}
+.container .welcome .nome-site .sub-titulo {
+  height: 25px;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 415px) {
+  .container .welcome .nome-site .titulo {
+    height: 50px;
+    width: 250px;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0 auto;
+  }
+}
+@media (max-height: 1080px) {
+  .container .welcome {
+    background-repeat: repeat;
+  }
+}
+.container .menu {
+  height: 43px;
+  background-color: black;
+  margin: 10px 0px 10px 0px;
+}
+.container .menu .submenu {
+  display: none;
+  position: absolute;
+  background-color: black;
+  text-align: center;
+  width: 115px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+.container .menu .opc {
+  display: inline-block;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 115px;
+  background-color: none;
+}
+.container .menu .opc a:link {
+  text-decoration: none;
+  color: #CD853F;
+}
+.container .menu .opc a:visited {
+  color: #CD853F;
+}
+.container .menu .opc a:hover {
+  color: white;
+}
+.container .menu .opc a:active {
+  color: #CD853F;
+}
+.container .menu .especial:hover .submenu {
+  display: block;
+  z-index: 10;
+}
+@media (max-width: 400px) {
+  .container .menu .opc {
+    display: block;
+    margin: 0 auto;
+  }
+  .container .menu .submenu {
+    position: relative;
+  }
+}
+@media (max-width: 400px) {
+  .container .menu {
+    height: auto;
+  }
+}
+.container .content {
+  color: #CD853F;
+  background-color: black;
+  box-shadow: 0px 9px 6px black;
+  padding: 15px;
+}
+.container .content .caixa-conteudo {
+  height: auto;
+  padding: 5px;
+}
+.container .content .caixa-conteudo .chamada {
+  height: 30px;
+  background-color: black;
+  text-transform: uppercase;
+  border-bottom: thin solid #CD853F;
+  margin: 5px 0px 10px 0px;
+  padding: 10px 2px 0px 2px;
+}
+.container footer {
+  max-width: 1200px;
+  color: #CD853F;
+  padding: 10px;
+  font-family: "Open Sans Condensed", sans-serif;
+  background-color: black;
+}
+
+/*
+https://pt.stackoverflow.com/questions/806/como-centralizar-horizontalmente-uma-div-dentro-de-outra
+https://www.w3schools.com/css/css_margin.asp
+http://erikasarti.com/html/tabela-cores/
+https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+https://www.w3schools.com/css/css_margin.asp
+http://www.maujor.com/tutorial/propriedade-css-para-estilizacao-de-background.php
+https://www.w3schools.com/colors/colors_picker.asp
+*/
+
+/*# sourceMappingURL=style.css.map */
